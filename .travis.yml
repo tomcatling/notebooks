@@ -1,0 +1,9 @@
+dist: xenial
+language: python
+python:
+  - "3.7"
+  - "3.6"
+install:
+  - pip install black-nb
+script:
+  - black-nb --check .
